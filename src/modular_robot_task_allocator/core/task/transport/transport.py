@@ -46,11 +46,11 @@ class Transport(BaseTask):
             self.coordinate = self.coordinate + mobility * v / np.linalg.norm(v)
 
         if self.assigned_robot is None:
-            raise_with_log(RuntimeError, f"Assigned_robot must be initialized: {self.name}.")
+            raise_with_log(RuntimeError, f"Assigned_robot must be initialized.")
         for robot in self.assigned_robot:  # ロボットを荷物に追従
             robot.travel(self.coordinate)
             if not is_within_range(robot.coordinate, self.coordinate):
-                raise_with_log(RuntimeError, f"{robot.name} cannot follow the object: {self.name}.")
+                raise_with_log(RuntimeError, f"{robot.name} cannot follow the object.")
 
     def update(self) -> bool:
         """
