@@ -1,0 +1,154 @@
+# This is a task configuration file for small_sample.
+# The tasks are as follows:
+#   Carrying solar panels: T_Solar
+#   Carrying inflatable structures: T_Inflatable
+#   Carrying regolith kiln: T_Kiln
+#   Transporting modules: T_Module
+#   Transporting regolith blocks: T_Block
+#   Deploying solar panels: M_Solar
+#   Deploying inflatable structures: M_Inflatable
+#   Collecting regolith: M_Regolith
+#   Connecting regolith blocks: M_RegolithBlock
+#   Assembling robot from modules: Assemble
+
+T_Solar_000:
+  class: Transport
+  coordinate:
+  - 0.0
+  - 0.0
+  origin_coordinate:
+  - 0.0
+  - 0.0
+  destination_coordinate:
+  - 6.0
+  - 8.0
+  transport_resistance: 1.0
+  total_workload: 10.0
+  completed_workload: 0.0
+t_001:
+  class: Transport
+  coordinate:
+  - 0.0
+  - 0.0
+  required_performance: !PerformanceAttributes
+    TRANSPORT: 2.0
+    MANUFACTURE: 0.0
+    MOBILITY: 0.0
+  origin_coordinate:
+  - 0.0
+  - 0.0
+  destination_coordinate:
+  - 6.0
+  - 8.0
+  transport_resistance: 1.0
+  total_workload: 10.0
+  completed_workload: 0.0
+t_002:
+  class: Transport
+  coordinate:
+  - 0.0
+  - 0.0
+  required_performance: !PerformanceAttributes
+    TRANSPORT: 4.0
+    MANUFACTURE: 0.0
+    MOBILITY: 0.0
+  origin_coordinate:
+  - 0.0
+  - 0.0
+  destination_coordinate:
+  - 0.0
+  - 5.0
+  transport_resistance: 2.0
+  total_workload: 10.0
+  completed_workload: 0.0
+t_003:
+  class: Transport
+  coordinate:
+  - 0.0
+  - 0.0
+  required_performance: !PerformanceAttributes
+    TRANSPORT: 4.0
+    MANUFACTURE: 0.0
+    MOBILITY: 0.0
+  origin_coordinate:
+  - 0.0
+  - 0.0
+  destination_coordinate:
+  - 0.0
+  - 5.0
+  transport_resistance: 2.0
+  total_workload: 10.0
+  completed_workload: 0.0
+t_004:
+  class: Transport
+  coordinate:
+  - 0.0
+  - 0.0
+  required_performance: !PerformanceAttributes
+    TRANSPORT: 8.0
+    MANUFACTURE: 0.0
+    MOBILITY: 0.0
+  origin_coordinate:
+  - 0.0
+  - 0.0
+  destination_coordinate:
+  - -5.0
+  - 0.0
+  transport_resistance: 2.0
+  total_workload: 10.0
+  completed_workload: 0.0
+t_005:
+  class: Manufacture
+  coordinate:
+  - 6.0
+  - 8.0
+  required_performance: !PerformanceAttributes
+    TRANSPORT: 0.0
+    MANUFACTURE: 1.0
+    MOBILITY: 0.0
+  total_workload: 10.0
+  completed_workload: 0.0
+t_006:
+  class: Manufacture
+  coordinate:
+  - 0.0
+  - 5.0
+  required_performance: !PerformanceAttributes
+    TRANSPORT: 0.0
+    MANUFACTURE: 2.0
+    MOBILITY: 0.0
+  total_workload: 10.0
+  completed_workload: 0.0
+t_007:
+  class: Manufacture
+  coordinate:
+  - 0.0
+  - 5.0
+  required_performance: !PerformanceAttributes
+    TRANSPORT: 0.0
+    MANUFACTURE: 3.0
+    MOBILITY: 0.0
+  total_workload: 10.0
+  completed_workload: 0.0
+t_008:
+  class: Manufacture
+  coordinate:
+  - -5.0
+  - 0.0
+  required_performance: !PerformanceAttributes
+    TRANSPORT: 0.0
+    MANUFACTURE: 4.0
+    MOBILITY: 0.0
+  total_workload: 10.0
+  completed_workload: 0.0
+t_009:
+  class: Manufacture
+  coordinate:
+  - -5.0
+  - 0.0
+  required_performance: !PerformanceAttributes
+    TRANSPORT: 0.0
+    MANUFACTURE: 5.0
+    MOBILITY: 0.0
+  total_workload: 10.0
+  completed_workload: 0.0

@@ -4,11 +4,11 @@ from numpy.typing import NDArray
 from enum import Enum
 import logging
 import numpy as np
-from modutask.core.robot.performance import PerformanceAttributes
-from modutask.core.module.module import Module, ModuleType
-from modutask.core.utils.coodinate_utils import is_within_range, make_coodinate_to_tuple
-from modutask.core.risk_scenario import BaseRiskScenario
-from modutask.utils import raise_with_log
+from modular_robot_task_allocator.core.robot.performance import PerformanceAttributes
+from modular_robot_task_allocator.core.module.module import Module, ModuleType
+from modular_robot_task_allocator.core.coodinate_utils import is_within_range, make_coodinate_to_tuple
+from modular_robot_task_allocator.core.risk_scenario import BaseRiskScenario
+from modular_robot_task_allocator.utils import raise_with_log
 
 logger = logging.getLogger(__name__)
 
